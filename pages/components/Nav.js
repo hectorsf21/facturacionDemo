@@ -103,7 +103,7 @@ const handleSalir = () => {
         {usuario?.usuario === 'hectorsf21' && <h1 className='text-white text-center mb-4'>MASTER</h1>}
         {usuario && <h1 className='text-white text-center mb-4'>{usuario?.nombre?.toUpperCase()}</h1>}
         <nav className='flex flex-col gap-2'>
-          <Link href={'/home'} className={route === '/home' ? activeLink : inactiveLink}>
+          <Link href={'/'} className={route === '/' ? activeLink : inactiveLink}>
             <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-6 h-6">
               <path strokeLinecap="round" strokeLinejoin="round" d="M9 17.25v1.007a3 3 0 0 1-.879 2.122L7.5 21h9l-.621-.621A3 3 0 0 1 15 18.257V17.25m6-12V15a2.25 2.25 0 0 1-2.25 2.25H5.25A2.25 2.25 0 0 1 3 15V5.25m18 0A2.25 2.25 0 0 0 18.75 3H5.25A2.25 2.25 0 0 0 3 5.25m18 0V12a2.25 2.25 0 0 1-2.25 2.25H5.25A2.25 2.25 0 0 1 3 12V5.25" />
             </svg>
@@ -146,12 +146,12 @@ const handleSalir = () => {
             </svg>
             <span className={`ml-2 ${isMenuVisible ? 'inline' : 'hidden'} md:inline`}>Facturas</span>
           </Link>
-          <div className='flex gap-2 p-2 items-center cursor-pointer'>
+          {/* <div className='flex gap-2 p-2 items-center cursor-pointer'>
           <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="size-6">
             <path strokeLinecap="round" strokeLinejoin="round" d="M8.25 9V5.25A2.25 2.25 0 0 1 10.5 3h6a2.25 2.25 0 0 1 2.25 2.25v13.5A2.25 2.25 0 0 1 16.5 21h-6a2.25 2.25 0 0 1-2.25-2.25V15m-3 0-3-3m0 0 3-3m-3 3H15" />
           </svg>
             <span onClick={handleSalir} className={`ml-2 ${isMenuVisible ? 'inline' : 'hidden'} md:inline`}>Salir</span>
-          </div>
+          </div> */}
           
         </nav>
       </aside>

@@ -10,7 +10,7 @@ import TableProduct from "@/pages/components/Table_product"
 import Factura from './components/Factura'
 import MsgExito from './components/MsgExito'
 import MsgFail from './components/MsgFail'
-import withAuth from '@/hoc/withAuth';
+// import withAuth from '@/hoc/withAuth';
 
 
 // SERVER
@@ -54,7 +54,7 @@ export const getServerSideProps = async () => {
 }
 // CLOSE SERVER
 
-function home({cliente, producto, formatoM, cajeros}) {
+export default function home({cliente, producto, formatoM, cajeros}) {
   const facturaRef = useRef(null);
   return (
     <>
@@ -80,5 +80,3 @@ function home({cliente, producto, formatoM, cajeros}) {
     </>
   )
 }
-
-export default withAuth(home);
